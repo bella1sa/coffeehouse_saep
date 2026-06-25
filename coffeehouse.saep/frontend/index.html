@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeHouse - Sistema de Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2> CoffeeHouse</h2>
+        <div class="perfil-usuario">
+            <img src="anexos/fotodeperfil.jpg.png" alt="Foto de Perfil">
+            <h3>Nome do Usuário</h3>
+            <p><strong>Pedidos feitos:</strong> <span id="total-pedidos-lateral">1</span></p>
+        </div>
+        <nav>
+            <a href="#" id="menu-inicio" class="active"> Início / Fazer Pedido</a>
+            <a href="#" id="menu-pedidos"> Meus Pedidos</a>
+        </nav>
+    </aside>
+
+    <main class="conteudo-principal">
+        
+        <section id="tela-inicio" class="formulario-pedido">
+            <h3>Fazer Novo Pedido</h3>
+            <form id="form-novo-pedido">
+                <div class="campo">
+                    <label>Selecione o Produto:</label>
+                    <select id="select-produto" required>
+                        <option value="">Escolha um item...</option>
+                        <option value="Café Expresso" data-preco="7.00" data-tempo="10">Café Expresso - R$ 7,00</option>
+                        <option value="Cappuccino" data-preco="12.00" data-tempo="15">Cappuccino - R$ 12,00</option>
+                        <option value="Croissant de Queijo" data-preco="10.50" data-tempo="20">Croissant de Queijo - R$ 10,50</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label>Quantidade:</label>
+                    <input type="number" id="input-quantidade" min="1" value="1" required>
+                </div>
+                <button type="submit" class="btn-pedir">Pedir</button>
+            </form>
+        </section>
+
+        <section id="tela-pedidos" class="lista-pedidos" style="display: none;">
+            <h3>Mural de Atividades (Meus Pedidos)</h3>
+            
+            <div id="container-cards">
+                <div class="card-pedido">
+                    <div class="card-topo">
+                        <h4> Café Expresso</h4>
+                        <span class="tempo">⏱ 10 min</span>
+                    </div>
+                    <p class="detalhes">Quantidade: 1 unidade | Preço total: R$ 7,00</p>
+                    <div class="interacoes">
+                        <button class="btn-like"> Curtir (0)</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

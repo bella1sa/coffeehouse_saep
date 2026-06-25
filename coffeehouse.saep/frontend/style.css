@@ -1,0 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; 
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f3e7d8;
+}
+
+
+.sidebar {
+    width: 280px;
+    background-color: #4b2c25; 
+    color: #ffffff;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+
+.perfil-usuario {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.perfil-usuario img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #b89b85; 
+    object-fit: cover;
+}
+
+.perfil-usuario h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.perfil-usuario p {
+    font-size: 13px;
+    color: #d1c7bd;
+}
+
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.sidebar nav a:hover, .sidebar nav a.active {
+    background-color: #6f493d; 
+}
+
+
+.conteudo-principal {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow-y: auto;
+}
+
+
+.formulario-pedido {
+    background-color: #fff8dc; 
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #b89b85; 
+}
+
+.formulario-pedido h3 {
+    color: #4b2c25;
+    margin-bottom: 20px;
+}
+
+.formulario-pedido form {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.campo label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4b2c25;
+}
+
+.campo select, .campo input {
+    padding: 10px;
+    border: 1px solid #b89b85;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ffffff;
+}
+
+
+.btn-pedir {
+    background-color: #f3e7d8; 
+    color: #ffffff;            
+    padding: 11px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.4); 
+    transition: 0.3s;
+}
+
+.btn-pedir:hover {
+    background-color: #6f493d; 
+}
+
+
+.lista-pedidos h3 {
+    color: #4b2c25;
+    margin-bottom: 15px;
+}
+
+.card-pedido {
+    background-color: #fff8dc;
+    border: 1px solid #b89b85;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-topo h4 {
+    color: #4b2c25;
+    font-size: 18px;
+}
+
+.tempo {
+    font-size: 14px;
+    color: #6f493d;
+    font-weight: 600;
+}
+
+.detalhes {
+    font-size: 15px;
+    color: #555555;
+}
+
+.interacoes {
+    display: flex;
+    gap: 15px;
+    border-top: 1px solid #b89b85;
+    border-bottom: 1px solid #b89b85;
+    padding: 10px 0;
+}
+
+.interacoes button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4b2c25;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.interacoes button:hover {
+    color: #6f493d;
+}
+
+.secao-comentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comentario {
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.secao-comentarios input {
+    padding: 8px 12px;
+    border: 1px solid #b89b85;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
